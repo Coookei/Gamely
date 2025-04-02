@@ -1,13 +1,7 @@
 import { Button, Grid, GridItem, Show } from "@chakra-ui/react";
-import { useColorMode } from "./components/ui/color-mode";
-import { useEffect } from "react";
+import NavBar from "./components/NavBar";
 
 function App() {
-  // const { colorMode, toggleColorMode } = useColorMode();
-  // useEffect(() => {
-  //   if (colorMode === "dark") toggleColorMode();
-  // }, [colorMode, toggleColorMode]);
-
   return (
     <>
       <Grid
@@ -16,15 +10,11 @@ function App() {
           lg: `"nav nav" "aside main"`,
         }}
       >
-        <GridItem area="nav" bg="coral">
-          Nav
+        <GridItem area="nav">
+          <NavBar></NavBar>
         </GridItem>
 
-        <GridItem
-          area="aside"
-          bg="gold"
-          display={{ base: "none", lg: "block" }}
-        >
+        <GridItem area="aside" bg="gold" display={{ base: "none", lg: "block" }}>
           Aside
         </GridItem>
 
