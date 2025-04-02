@@ -1,4 +1,4 @@
-import { Button } from "@chakra-ui/react";
+import { Button, Grid, GridItem, Show } from "@chakra-ui/react";
 import { useColorMode } from "./components/ui/color-mode";
 import { useEffect } from "react";
 
@@ -10,20 +10,28 @@ function App() {
 
   return (
     <>
-      <Button colorPalette="blue">Solid</Button>
-      <Button colorPalette="blue" variant="surface">
-        Surface
-      </Button>
+      <Grid
+        templateAreas={{
+          base: `"nav" "main"`,
+          lg: `"nav nav" "aside main"`,
+        }}
+      >
+        <GridItem area="nav" bg="coral">
+          Nav
+        </GridItem>
 
-      <Button colorPalette="blue" variant="outline">
-        Outline
-      </Button>
-      <Button colorPalette="blue" variant="ghost">
-        Ghost
-      </Button>
-      <Button colorPalette="blue" variant="plain">
-        Plain
-      </Button>
+        <GridItem
+          area="aside"
+          bg="gold"
+          display={{ base: "none", lg: "block" }}
+        >
+          Aside
+        </GridItem>
+
+        <GridItem area="main" bg="dodgerblue">
+          Main
+        </GridItem>
+      </Grid>
     </>
   );
 }
