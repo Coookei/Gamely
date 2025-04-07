@@ -1,5 +1,7 @@
+import { useQuery } from "@tanstack/react-query";
+import apiClient from "../services/api-client.ts";
+import { FetchResponse } from "./useData.ts";
 import genres from "../data/genres.ts";
-// import useData from "./useData";
 
 export interface Genre {
   id: number;
@@ -7,7 +9,12 @@ export interface Genre {
   image_background: string;
 }
 
-// use static data rather than querying API as rarely changes
-const useGenres = () => ({ data: genres, error: null, isLoading: false }); // useData<Genre>("/genres");
+const useGenres = () =>
+  useQuery({
+    queryKey: ["genres"],
+    queryFn: () => apiClient.get<FetchResponse<Genre>>("/genres").then((res) => res.data),
+    staleTime: 24 * 60 * 60 * 1000, // 24 hrs
+    initialData: { count: genres.length, results: genres }, // use static data for first render
+  });
 
 export default useGenres;
