@@ -1,9 +1,9 @@
 import { SimpleGrid, Text, useBreakpointValue } from "@chakra-ui/react";
-import useGames from "../hooks/useGames.ts";
 import GameCard from "./GameCard.tsx";
-import GameCardSkeleton from "./GameCardSkeleton.tsx";
 import GameCardContainer from "./GameCardContainer.tsx";
+import GameCardSkeleton from "./GameCardSkeleton.tsx";
 import { GameQuery } from "../App.tsx";
+import useGames from "../hooks/useGames.ts";
 
 interface Props {
   gameQuery: GameQuery;
@@ -33,7 +33,7 @@ const GameGrid = ({ gameQuery }: Props) => {
           </GameCardContainer>
         ))}
 
-      {data?.results.map((game) => (
+      {data?.results?.map((game) => (
         <GameCardContainer key={game.id}>
           <GameCard game={game}></GameCard>
         </GameCardContainer>
