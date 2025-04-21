@@ -1,6 +1,4 @@
-# 🎮 Game Hub
-
-(Project is still WIP)
+# 🎮 Gamely
 
 A React project that showcases games using the [RAWG API](https://rawg.io/apidocs).
 
