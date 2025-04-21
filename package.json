@@ -2,6 +2,15 @@
   "name": "gamely",
   "private": true,
   "version": "1.0.0",
+  "description": "A modern, responsive game browser built with React and the RAWG API.",
+  "keywords": ["React", "RAWG API", "games"],
+  "author": "Coookei",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Coookei/Gamely.git"
+  },
+  "homepage": "https://gamely.tomfox.tech",
   "type": "module",
   "scripts": {
     "dev": "vite",
