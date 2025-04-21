@@ -15,8 +15,8 @@ Follow these steps to set up the project locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Coookei/game-hub.git
-cd game-hub
+git clone https://github.com/Coookei/Gamely.git
+cd Gamely
 ```
 
 ### 2. Install dependencies
