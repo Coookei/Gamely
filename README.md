@@ -9,14 +9,14 @@ A modern, responsive game browser built with React and the [RAWG API](https://ra
 
 ### 🔗 [Live Demo](https://gamely.tomfox.tech)
 
-## Table of Contents
+## Table of Contents 📑
 
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Built With](#built-with)
-- [Setup](#setup)
-- [Contributing](#contributing)
-- [License](#license)
+- [Features](#features-)
+- [Screenshots](#screenshots-)
+- [Built With](#built-with–)
+- [Setup](#setup-)
+- [Contributing](#contributing-)
+- [License](#license-)
 
 ## Features ✨
 
