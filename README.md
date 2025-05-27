@@ -15,6 +15,7 @@ A modern, responsive game browser built with React and the [RAWG API](https://ra
 - [Screenshots](#screenshots-)
 - [Built With](#built-with–)
 - [Setup](#setup-)
+- [Security](#security-)
 - [Contributing](#contributing-)
 - [License](#license-)
 
@@ -26,6 +27,7 @@ A modern, responsive game browser built with React and the [RAWG API](https://ra
 - 📝 Detailed view for each game to display additional information.
 - 📱 Mobile-friendly, responsive design with dark mode support.
 - ⏳ Dynamic skeleton loading for an improved user experience.
+- 🛡️ Optional proxy server to secure your RAWG API key and prevent exposure in client-side code.
 
 ## Screenshots 📸
 
@@ -79,6 +81,8 @@ VITE_API_URL=https://api.rawg.io/api/
 VITE_API_KEY=your_api_key_here
 ```
 
+_Note:_ See the Security section below for details on protecting your API key.
+
 ### 5. Start the server 🚀
 
 Run the following command to start the app:
@@ -88,6 +92,41 @@ npm run dev
 ```
 
 The app will be available at the URL shown in the console, normally `http://localhost:5173` on localhost.
+
+## Security 🔒
+
+Since Gamely is a front-end client app, any embedded API key will be visible in the browser’s network tab. To protect your RAWG API key, it's strongly recommended to use a proxy server that forwards requests and keeps your key secure.
+
+You can use Gamely Proxy built with TypeScript, Express, and Node.js: [Gamely-Proxy](https://github.com/Coookei/Gamely-Proxy).
+
+### Using a Proxy
+
+When running your own proxy server, only one environment variable is needed:
+
+```env
+VITE_API_URL=https://your-proxy-url.com/
+```
+
+If you're hosting Gamely on **Vercel**, you can configure a clean URL by amending the rewrite rule in your `vercel.json` file:
+
+```json
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://your-proxy-url.com/:path*"
+    }
+  ]
+}
+```
+
+Then you can simplify your environment variable:
+
+```env
+VITE_API_URL=/api/
+```
+
+Your proxy will now be accessible at `https://your-gamely-url.com/api`
 
 ## Contributing 🤝
 
