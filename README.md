@@ -13,8 +13,8 @@ A modern, responsive game browser built with React and the [RAWG API](https://ra
 
 - [Features](#features-)
 - [Screenshots](#screenshots-)
-- [Built With](#built-with–)
-- [Setup](#setup-)
+- [Built With](#built-with-)
+- [Setup](#setup-%EF%B8%8F)
 - [Security](#security-)
 - [Contributing](#contributing-)
 - [License](#license-)
