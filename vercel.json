@@ -10,7 +10,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://proxy.gamely.tomfox.tech/api/:path*"
+      "destination": "https://proxy.gamely.tomfox.tech/:path*"
     },
     {
       "source": "/:path*",
