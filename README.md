@@ -27,7 +27,7 @@ A modern, responsive game browser built with React and the [RAWG API](https://ra
 - 📝 Detailed view for each game to display additional information.
 - 📱 Mobile-friendly, responsive design with dark mode support.
 - ⏳ Dynamic skeleton loading for an improved user experience.
-- 🛡️ Optional proxy server to secure your RAWG API key and prevent exposure in client-side code.
+- 🛡️ Optional proxy server with Redis caching to secure your RAWG API key and prevent exposure in client-side code.
 
 ## Screenshots 📸
 
