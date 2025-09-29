@@ -142,3 +142,5 @@ Feel free to fork the repo and submit a pull request.
 ## License 📜
 
 This project is licensed under the MIT License.
+
+<sub>With credit to <a href="https://www.youtube.com/c/programmingwithmosh">Programming with Mosh</a>.</sub>
