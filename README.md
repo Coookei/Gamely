@@ -101,7 +101,7 @@ You can use Gamely Proxy built with TypeScript, Express, and Node.js: [Gamely-Pr
 
 ### Using a Proxy
 
-When running your own proxy server, only one environment variable is needed:
+When running your own proxy server, only one environment variable is needed in Gamely:
 
 ```env
 VITE_API_URL=https://your-proxy-url.com/
