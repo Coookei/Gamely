@@ -39,7 +39,7 @@ _View extra information about each game._
 
 ## Built With 📦
 
-- [**React**](https://reactjs.org/): A JavaScript library for building user interfaces.
+- [**React**](https://react.dev/): A JavaScript library for building user interfaces.
 - [**Chakra-UI**](https://chakra-ui.com/): A modern React UI framework for building accessible and responsive components.
 - [**React Query**](https://tanstack.com/query/latest): For efficient data fetching, and caching.
 - [**React Router**](https://reactrouter.com/): For handling client-side routing and navigation.
