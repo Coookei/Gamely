@@ -2,8 +2,15 @@
   "name": "gamely",
   "private": true,
   "version": "1.0.0",
-  "description": "A modern, responsive game browser built with React and the RAWG API.",
-  "keywords": ["React", "RAWG API", "games"],
+  "description": "A modern, responsive, React-powered game discovery platform featuring search, filters, and infinite scroll using the RAWG API.",
+  "keywords": [
+    "React",
+    "TypeScript",
+    "Zustand",
+    "React Query",
+    "React Router",
+    "Chakra UI"
+  ],
   "author": "Coookei",
   "license": "MIT",
   "repository": {
